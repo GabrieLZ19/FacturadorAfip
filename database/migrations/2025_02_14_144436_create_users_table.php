@@ -18,7 +18,7 @@ public function up()
         $table->string('email')->unique();
         $table->timestamp('email_verified_at')->nullable();
         $table->string('password');
-        $table->string('role')->default('user'); // Puedes hacer esto para roles (admin, vendedor, etc.)
+        $table->string('role')->default('vendedor'); // Puedes hacer esto para roles (admin, vendedor, etc.)
         $table->rememberToken();
         $table->timestamps();
     });
